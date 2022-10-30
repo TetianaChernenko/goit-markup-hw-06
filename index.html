@@ -23,11 +23,9 @@
         <nav class="site-nav">
           <a class="logo" href="/"><span class="logo-wrap">Web</span>Studio</a>
           <ul class="nav">
-            <div class="wrapper-link-current">
-              <li>
-                <a href="./index.html" class="nav-link current">Студія</a>
-              </li>
-            </div>
+            <li class="wrapper-link-current">
+              <a href="./index.html" class="nav-link current">Студія</a>
+            </li>
             <li>
               <a href="./portfolio.html" class="nav-link">Портфоліо</a>
             </li>
@@ -462,22 +460,24 @@
           </div>
           <div>
             <p class="footer-text">Підпишіться на розсилку</p>
-            <div class="footer-subscription">
-              <label for="footer-mail"></label>
-              <input
-                class="footer-input"
-                id="footer-mail"
-                type="text"
-                name="footer-mail"
-                placeholder="E-mail"
-              />
-              <button data-modal-open type="submit" class="footer-button">
-                Підписатися
-                <svg class="footer-subscription-icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-icon-send"></use>
-                </svg>
-              </button>
-            </div>
+            <form name="subscription-form">
+              <div class="footer-subscription">
+                <label for="footer-mail"></label>
+                <input
+                  class="footer-input"
+                  id="footer-mail"
+                  type="text"
+                  name="footer-mail"
+                  placeholder="E-mail"
+                />
+                <button data-modal-open type="submit" class="footer-button">
+                  Підписатися
+                  <svg class="footer-subscription-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-icon-send"></use>
+                  </svg>
+                </button>
+              </div>
+            </form>
           </div>
         </div>
       </div>
@@ -490,7 +490,7 @@
             <use href="./images/icons.svg#icon-close-black"></use>
           </svg>
         </button>
-        <h2>Залиште свої дані, ми вам передзвонимо</h2>
+        <p class="form-text">Залиште свої дані, ми вам передзвонимо</p>
         <form name="contact-form">
           <label class="form-lable" for="person-name">Ім'я</label>
           <div class="form-wrapper">
